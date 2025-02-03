@@ -1,0 +1,20 @@
+{
+  "name": "playwright-showcase-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "eslint ./src && tsc --incremental -p src/test/tsconfig.json",
+    "test": "playwright test -c tests-out"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.10",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0"
+  },
+  "private": true
+}
